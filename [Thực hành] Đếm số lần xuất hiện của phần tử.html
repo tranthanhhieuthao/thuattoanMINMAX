@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let Array1 =[];
+    let count =0;
+    let number = Math.floor(Math.random()*100);
+    for (let i=0;i<100;i++){
+        let Nhapso = Math.floor(Math.random()*100);
+        Array1.push(Nhapso);
+    }
+    function Count(Array,number) {
+        for (let i=0;i<Array.length;i++){
+            if (Array[i] === number){
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+    console.log("Mang dang xet la"+ Array1);
+    console.log("so can tim la"+number);
+    let Solanxuathien =Count(Array1,number);
+    console.log(Solanxuathien);
+</script>
+</body>
+</html>

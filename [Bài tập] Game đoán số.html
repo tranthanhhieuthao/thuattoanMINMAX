@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let Array1 = [];
+    for (let i=0;i<100;i++){
+        let nhapso= Math.floor(Math.random()*100);
+        Array1.push(nhapso);
+    }
+    let m =Math.floor(Math.random()*Array1.length);
+    let secret = Array1[m];
+    let doanso;
+    function timkiemtuyentinh(secret) {
+        for (let i = 0; i < Array1.length; i++) {
+            doanso = parseInt(prompt("nhap so"));
+            if (secret > doanso) {
+                alert( "To low");
+            } else if (secret < doanso) {
+                alert( "To hight");
+            } else {
+                alert("ban doan trug");
+            break;
+            }
+        }
+    }
+
+
+
+    console.log(Array1);
+    console.log("chi so mang="+" "+m);
+    console.log("so bi mat ="+secret);
+    console.log(timkiemtuyentinh(secret));
+
+</script>
+</body>
+</html>
